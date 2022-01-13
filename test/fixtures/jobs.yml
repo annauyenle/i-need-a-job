@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  job_title: MyString
+  location: one
+  pay_range: one
+  company: one
+  job_status: one
+  user: one
+
+two:
+  url: MyString
+  job_title: MyString
+  location: two
+  pay_range: two
+  company: two
+  job_status: two
+  user: two
