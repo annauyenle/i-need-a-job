@@ -1,4 +1,4 @@
-class JobStatusCompleted < ApplicationRecord
+class CompletedJobStatus < ApplicationRecord
   belongs_to :job
   belongs_to :job_status
 end
