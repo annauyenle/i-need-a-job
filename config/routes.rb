@@ -12,4 +12,6 @@ Rails.application.routes.draw do
       resources :users 
     end
   end
+
+  get '*path', to: 'home#index', via: :all
 end
