@@ -346,3 +346,13 @@ Processing by Api::V1::JobStatusesController#index as HTML
 Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 9513)
 
 
+Started GET "/" for ::1 at 2022-01-13 21:51:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 562.7ms | Allocations: 119401)
+Completed 200 OK in 584ms (Views: 571.1ms | ActiveRecord: 0.0ms | Allocations: 125250)
+
+
