@@ -1,4 +1,4 @@
 tmp/cache/*
 .DS_STORE
 app/assets
-log/
+log/*

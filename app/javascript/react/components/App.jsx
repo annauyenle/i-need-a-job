@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from './NavBar'
+import { JobPage } from './JobPage'
 
 const App = () => {
   return (
     <div>
-      Hello 
+      <NavBar /> 
+      <JobPage />
     </div>
   )
 }
