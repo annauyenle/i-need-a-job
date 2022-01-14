@@ -1,7 +1,10 @@
 {
     "name": "i-need-a-job",
     "dependencies": {
+        "@emotion/react": "^11.7.1",
+        "@emotion/styled": "^11.6.0",
         "@hotwired/turbo-rails": "^7.1.0",
+        "@mui/icons-material": "^5.2.5",
         "@mui/material": "^5.2.8",
         "esbuild": "^0.14.11",
         "react": "^17.0.2",
