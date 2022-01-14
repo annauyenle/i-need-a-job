@@ -1,0 +1,9 @@
+{
+    "name": "i-need-a-job",
+    "dependencies": {
+        "@hotwired/turbo-rails": "^7.1.0",
+        "esbuild": "^0.14.11",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
+}
