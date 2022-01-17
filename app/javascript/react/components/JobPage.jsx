@@ -1,8 +1,30 @@
-import React from 'react'
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid'
+import React, { useState, useEffect } from "react";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 
-export const JobPage = () => {
+const JobPage = () => {
+  const [statuses, setStatuses] = useState([]);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchStatuses = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/api/v1/job_statuses");
+        const json = await res.json();
+        if (res.ok) {
+          setStatuses(json);
+        } else {
+          setError(res);
+        }
+      } catch (e) {
+        setError(err);
+      }
+    };
+    fetchStatuses();
+  }, []);
+
+  console.log(statuses.data);
+
   return (
     <Container maxWidth="sm">
       <Grid container spacing={2}>
@@ -19,5 +41,7 @@ export const JobPage = () => {
         </Grid>
       </Grid>
     </Container>
-  )
-}
+  );
+};
+
+export default JobPage;
